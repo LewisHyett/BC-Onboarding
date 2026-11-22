@@ -6,6 +6,8 @@ It ships with a set of templates for the finance side of Business Central, aimed
 
 > Status: proof of concept. It has been compiled with CodeCop, UICop and PerTenantExtensionCop, but it hasn't been formally tested. There is no test app yet.
 
+![An onboarding card with its task tree and Gantt chart](docs/images/onboarding-card.png)
+
 ## Features
 
 - **Onboardings.** Create an onboarding per customer, per person or per team. Choose **Select Modules** to add templates, then work through the tasks. You can add, remove and reorder tasks freely.
@@ -42,14 +44,26 @@ It ships with a set of templates for the finance side of Business Central, aimed
 4. Assign the **ONB ALL** permission set to users.
 5. In Business Central, search for **Onboarding Templates**. The standard templates are created on install. If the list is empty, choose **Get Standard Templates**.
 
+   ![The General ledger template card](docs/images/template-card.png)
+
 ## Using it
 
 1. Search for **Onboardings** and choose **New**. Enter a code, a description and, optionally, who the onboarding is for and its start date.
 2. Choose **Select Modules** and pick one or more templates. Each template is added as a module with its tasks underneath.
+
+   ![Select Modules, picking templates to add](docs/images/select-modules.png)
+
 3. Add your own tasks with **New Line**, then arrange them with Indent, Outdent, Move Up and Move Down.
 4. Set durations, then choose **Plan Dates**, or enter planned dates by hand.
 5. Work through the tasks: set Status, add Notes, and assign people.
+
+   ![Onboarding tasks with rolled-up group status](docs/images/onboarding-lines.png)
+
 6. Follow progress on the onboarding list, the card and the Gantt chart.
+
+   ![The Onboardings list with Progress %](docs/images/onboarding-list.png)
+
+   ![The Gantt chart on the full-screen Plan page](docs/images/gantt-full-screen.png)
 
 Running **Select Modules** again for a module that's already on the onboarding only adds the template lines that are missing. It puts each one in its original position and never changes statuses or lines you added.
 
