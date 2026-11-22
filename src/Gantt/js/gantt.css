@@ -1,0 +1,105 @@
+html,
+body,
+#controlAddIn {
+    height: 100%;
+    margin: 0;
+}
+
+.onb-gantt {
+    font-family: "Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #212121;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.onb-gantt .empty {
+    padding: 12px;
+    color: #605e5c;
+}
+
+.onb-gantt svg {
+    display: block;
+}
+
+.onb-gantt .label {
+    fill: #212121;
+}
+
+.onb-gantt .label.group {
+    font-weight: 600;
+}
+
+.onb-gantt .row-alt {
+    fill: #faf9f8;
+}
+
+.onb-gantt .grid {
+    stroke: #e1dfdd;
+    stroke-width: 1;
+}
+
+.onb-gantt .grid-minor {
+    stroke: #f3f2f1;
+    stroke-width: 1;
+}
+
+.onb-gantt .axis {
+    fill: #605e5c;
+    font-size: 12px;
+}
+
+.onb-gantt .today {
+    stroke: #d13438;
+    stroke-width: 1.5;
+    stroke-dasharray: 4 3;
+}
+
+.onb-gantt .bar-group {
+    fill: #323130;
+}
+
+.onb-gantt .status-0 { fill: #a19f9d; }   /* Not Started */
+.onb-gantt .status-1 { fill: #ca5010; }   /* In Progress */
+.onb-gantt .status-2 { fill: #107c10; }   /* Completed */
+.onb-gantt .status-3 { fill: #d2d0ce; }   /* Not Applicable */
+
+.onb-gantt .toolbar {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.onb-gantt .toolbar button {
+    font: inherit;
+    padding: 3px 10px;
+    border: 1px solid #c8c6c4;
+    border-radius: 2px;
+    background: #ffffff;
+    color: #212121;
+    cursor: pointer;
+}
+
+.onb-gantt .toolbar button.active {
+    background: #00a3a3;
+    border-color: #00a3a3;
+    color: #ffffff;
+}
+
+.onb-gantt .scroll {
+    overflow: auto;
+}
+
+.onb-gantt .toolbar button.fullscreen {
+    margin-left: auto;
+}
+
+/* In browser full screen the frame has no BC background. */
+:fullscreen,
+:fullscreen body {
+    background: #ffffff;
+}

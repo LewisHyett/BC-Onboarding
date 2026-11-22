@@ -1,0 +1,15 @@
+# Build output
+*.app
+
+# Downloaded symbols and caches
+.alpackages/
+.vscode/.alcache/
+.vscode/rad.json
+
+# Per-developer settings (sandbox, tenant, test runner credentials)
+.vscode/launch.json
+.altestrunner/
+.claude/settings.local.json
+
+# Local backups
+.snapshots/
