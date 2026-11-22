@@ -4,8 +4,6 @@ A Business Central extension for planning and tracking customer onboarding. You 
 
 It ships with a set of templates for the finance side of Business Central, aimed at not-for-profit organisations. Each template links to the relevant Microsoft Learn articles.
 
-> Status: proof of concept. It has been compiled with CodeCop, UICop and PerTenantExtensionCop, but it hasn't been formally tested. There is no test app yet.
-
 ![An onboarding card with its task tree and Gantt chart](docs/images/onboarding-card.png)
 
 ## Features
